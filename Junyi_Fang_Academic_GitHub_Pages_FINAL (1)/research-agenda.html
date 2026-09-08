@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SOP2VerifiedOpt | Junyi Fang Research Agenda</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="topbar"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">JF</span><span>Junyi Fang</span></a><nav class="nav" style="display:flex"><a href="index.html">← 返回主页</a></nav></div></header>
+<main>
+<section class="section agenda" style="min-height:calc(100vh - 70px)">
+<div class="container">
+  <div class="section-title dark"><span>R</span><h2>SOP2VerifiedOpt</h2><p>Research Agenda</p></div>
+  <div class="agenda-hero">
+    <div><p class="agenda-kicker">POSSIBLE MASTER'S RESEARCH DIRECTION</p><h3>SOP2VerifiedOpt</h3><p class="agenda-subtitle">Provenance-Aware and Counterexample-Guided Autoformalization of Operational SOPs into Reliable Optimization Models</p><p>研究真实企业运营规则进入优化求解器之前的语义可信问题：不仅关心模型“能不能跑”，更关心模型是否忠实表达原始业务规则，以及错误模型会导致多大的运营损失。</p></div>
+    <div class="question"><span>Research Question</span><strong>How can an LLM-generated optimization model be audited against the business semantics from which it was generated?</strong></div>
+  </div>
+  <div class="pipeline">
+    <div><b>01</b><strong>SOP / Business Rules</strong><small>长文本、多版本、例外条款</small></div><em>→</em>
+    <div><b>02</b><strong>Atomic Rules + Provenance</strong><small>条款级来源追踪</small></div><em>→</em>
+    <div><b>03</b><strong>Dual Formalization</strong><small>降低自审循环偏差</small></div><em>→</em>
+    <div><b>04</b><strong>Counterexample Audit</strong><small>candidate ∧ ¬intended</small></div><em>→</em>
+    <div><b>05</b><strong>Repair / Routing</strong><small>patch / rebind / regenerate</small></div><em>→</em>
+    <div><b>06</b><strong>Decision & Regret</strong><small>真实业务环境评价</small></div>
+  </div>
+  <div class="agenda-grid">
+    <article><h4>Benchmark</h4><h3>SOP-level trustworthy benchmark</h3><p>句子—业务规则—变量—约束—数据字段—决策结果的完整 provenance。</p></article>
+    <article><h4>Verification</h4><h3>Counterexample-grounded semantic audit</h3><p>检测遗漏、方向、范围、hard/soft、数据绑定、单位、时间与版本冲突等 silent failures。</p></article>
+    <article><h4>Decision Science</h4><h3>Decision-aware diagnosis & repair</h3><p>将 semantic error 连接到 operational regret、CVaR、成本与服务损失。</p></article>
+  </div>
+  <div class="agenda-bottom">
+    <div><h4>Stage A</h4><p><strong>Slotting + Replenishment + Inventory</strong><br>Gurobi + Z3；先验证“可信建模”本身。</p></div>
+    <div><h4>Stage B / C</h4><p>扩展 CP-SAT、VRP 与 adaptive solver routing，并将 counterexample、coverage 与 decision regret 转化为 verifier-based learning signal。</p></div>
+  </div>
+</div>
+</section>
+</main>
+</body></html>
