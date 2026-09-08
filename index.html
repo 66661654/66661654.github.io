@@ -5,14 +5,48 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="方珺逸 Junyi Fang — 上海交通大学安泰经济与管理学院管理科学与工程硕士研究生。Trustworthy AI × Operations Research × Supply Chain × Decision Intelligence.">
   <meta name="author" content="Junyi Fang">
+  <meta name="theme-color" content="#10233d">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://66661654.github.io/">
+  <meta property="og:url" content="https://66661654.github.io/">
+  <meta property="og:site_name" content="Junyi Fang Academic Profile">
   <meta property="og:title" content="方珺逸 Junyi Fang | Academic Profile">
   <meta property="og:description" content="Trustworthy AI × Operations Research × Supply Chain × Decision Intelligence">
   <meta property="og:type" content="website">
   <title>方珺逸 Junyi Fang | Academic Profile</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Junyi Fang",
+    "alternateName":"方珺逸",
+    "url":"https://66661654.github.io/",
+    "sameAs":["https://github.com/66661654"],
+    "affiliation":{
+      "@type":"CollegeOrUniversity",
+      "name":"Shanghai Jiao Tong University, Antai College of Economics and Management"
+    },
+    "knowsAbout":[
+      "Trustworthy AI","Operations Research","Supply Chain",
+      "Large Language Models","Decision Intelligence","Industrial Digitalization"
+    ],
+    "subjectOf":{
+      "@type":"ScholarlyArticle",
+      "name":"Sentiment-Driven Nonlinear Relationship Between Financial Market Emotion and Returns: Dynamic Adaptive Modeling Based on LLMs",
+      "identifier":"https://doi.org/10.1145/3767052.3767067",
+      "isPartOf":"2025 International Conference on Big Data, Artificial Intelligence and Digital Economy (BDAIE 2025)"
+    }
+  }
+  </script>
 </head>
-<body>
+<body class="site-loading">
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="ambient ambient-a" aria-hidden="true"></div>
+<div class="ambient ambient-b" aria-hidden="true"></div>
 <header class="topbar">
   <div class="container nav-wrap">
     <a class="brand" href="#home"><span class="brand-mark">JF</span><span>Junyi Fang</span></a>
@@ -28,6 +62,9 @@
       <a href="#honors">07 荣誉</a>
       <a href="#contact">08 联系</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="切换深色/浅色主题" title="Theme">
+      <span class="theme-icon">◐</span>
+    </button>
   </div>
 </header>
 
@@ -54,6 +91,12 @@
         <span>Trustworthy LLM</span><span>Operations Research</span><span>Supply Chain</span>
         <span>Optimization Modeling</span><span>Decision Intelligence</span>
       </div>
+      <div class="hero-stats" aria-label="Academic highlights">
+        <div><strong data-count="1" data-prefix="#">#1</strong><span>本科专业排名</span></div>
+        <div><strong data-count="3" data-suffix="×">3×</strong><span>国家奖学金</span></div>
+        <div><strong data-count="2026">2026</strong><span>SJTU Antai</span></div>
+        <div><strong>ACM</strong><span>Published Proceedings</span></div>
+      </div>
     </div>
     <aside class="profile-card">
       <img src="https://avatars.githubusercontent.com/u/183327245?v=4" alt="Junyi Fang">
@@ -69,7 +112,7 @@
   </div>
 </section>
 
-<section class="section" id="about">
+<section class="section reveal-section" id="about">
   <div class="container">
     <div class="section-title"><span>01</span><h2>个人简介</h2><p>About</p></div>
     <div class="two-col">
@@ -91,7 +134,7 @@
   </div>
 </section>
 
-<section class="section alt" id="education">
+<section class="section alt reveal-section" id="education">
   <div class="container">
     <div class="section-title"><span>02</span><h2>教育背景</h2><p>Education</p></div>
     <div class="timeline">
@@ -126,12 +169,17 @@
       <div class="question"><span>Core Question</span><strong>How can an LLM-generated optimization model be audited against the business semantics from which it was generated?</strong></div>
     </div>
     <div class="pipeline">
-      <div><b>01</b><strong>SOP / Rules / Tables</strong><small>企业规则输入</small></div><em>→</em>
-      <div><b>02</b><strong>Rule Provenance</strong><small>原子规则与来源追踪</small></div><em>→</em>
-      <div><b>03</b><strong>Dual Formalization</strong><small>独立双路径建模</small></div><em>→</em>
-      <div><b>04</b><strong>Counterexample Audit</strong><small>Z3 / Solver 反例</small></div><em>→</em>
-      <div><b>05</b><strong>Verified Model</strong><small>可信优化模型</small></div><em>→</em>
-      <div><b>06</b><strong>Decision & Regret</strong><small>业务损失评估</small></div>
+      <div class="pipeline-step active" tabindex="0" data-step="0"><b>01</b><strong>SOP / Rules / Tables</strong><small>企业规则输入</small></div><em>→</em>
+      <div class="pipeline-step" tabindex="0" data-step="1"><b>02</b><strong>Rule Provenance</strong><small>原子规则与来源追踪</small></div><em>→</em>
+      <div class="pipeline-step" tabindex="0" data-step="2"><b>03</b><strong>Dual Formalization</strong><small>独立双路径建模</small></div><em>→</em>
+      <div class="pipeline-step" tabindex="0" data-step="3"><b>04</b><strong>Counterexample Audit</strong><small>Z3 / Solver 反例</small></div><em>→</em>
+      <div class="pipeline-step" tabindex="0" data-step="4"><b>05</b><strong>Verified Model</strong><small>可信优化模型</small></div><em>→</em>
+      <div class="pipeline-step" tabindex="0" data-step="5"><b>06</b><strong>Decision & Regret</strong><small>业务损失评估</small></div>
+    </div>
+    <div class="pipeline-explainer" aria-live="polite">
+      <span class="pipeline-explainer-index">STEP 01</span>
+      <strong class="pipeline-explainer-title">Operational SOP ingestion</strong>
+      <p class="pipeline-explainer-text">解析企业 SOP、表格和例外规则，保留版本、时间、适用范围与原始来源。</p>
     </div>
     <div class="agenda-grid">
       <article><h4>Contribution A</h4><h3>SOP-level Trustworthy Benchmark</h3><p>构建面向仓储与供应链 SOP 的 Text-to-Optimization benchmark，保留句子—规则—变量—约束—数据字段—决策结果的完整 provenance。</p></article>
@@ -148,8 +196,17 @@
 <section class="section alt" id="research">
   <div class="container">
     <div class="section-title"><span>04</span><h2>科研成果</h2><p>Research & Publications</p></div>
+    <div class="pub-toolbar reveal">
+      <div class="pub-filter" role="group" aria-label="Publication filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="published">Published</button>
+        <button class="filter-btn" data-filter="working">Working Paper</button>
+        <button class="filter-btn" data-filter="project">Research Project</button>
+      </div>
+      <span class="pub-hint">Hover / click cards for details</span>
+    </div>
     <div class="pub-list">
-      <article class="pub">
+      <article class="pub interactive-card" data-category="working">
         <div class="pub-num">01</div>
         <div>
           <div class="badges"><span class="blue">Manuscript · Under Review</span><span>First & Corresponding Author</span></div>
@@ -159,7 +216,7 @@
           <a href="assets/papers/RAVEN-UCB.pdf" target="_blank">Read manuscript →</a>
         </div>
       </article>
-      <article class="pub">
+      <article class="pub interactive-card" data-category="published">
         <div class="pub-num">02</div>
         <div>
           <div class="badges"><span class="green">Accepted</span><span>Third Author</span></div>
@@ -169,16 +226,57 @@
           <a href="assets/papers/Consumer-Purchase-Prediction.pdf" target="_blank">Read paper →</a>
         </div>
       </article>
-      <article class="pub">
+      <article class="pub interactive-card publication-featured" data-category="published" id="bdaie-2025">
         <div class="pub-num">03</div>
-        <div>
-          <div class="badges"><span class="green">Conference Paper · Accepted</span><span>First Author</span></div>
+        <div class="pub-main">
+          <div class="badges">
+            <span class="green pulse-badge">Published · ACM ICPS</span>
+            <span>First &amp; Corresponding Author</span>
+            <span class="doi-badge">DOI 10.1145/3767052.3767067</span>
+          </div>
+          <div class="pub-meta-line">
+            <span>BDAIE 2025</span><i>·</i><span>Kunming, China</span><i>·</i><span>Jul 18–20, 2025</span><i>·</i><span>pp. 92–98</span>
+          </div>
           <h3>Sentiment-Driven Nonlinear Relationship Between Financial Market Emotion and Returns: Dynamic Adaptive Modeling Based on LLMs</h3>
-          <p>结合大语言模型情绪表征与动态自适应建模，研究金融市场情绪与收益之间的非线性与非对称关系；体现 LLM、金融文本与动态建模方向的交叉研究。</p>
-          <div class="tags"><span>LLM</span><span>Investor Sentiment</span><span>Dynamic Modeling</span><span>FinTech</span></div>
+          <p>
+            结合中文 RoBERTa 情绪建模、动态自适应优化与金融计量/机器学习方法，研究中国金融市场中投资者情绪与收益之间的非线性、状态依赖与牛熊市非对称效应。
+            论文已正式收录于 <em>2025 International Conference on Big Data, Artificial Intelligence and Digital Economy (BDAIE 2025)</em> 会议论文集，并发布于 ACM Digital Library。
+          </p>
+          <div class="paper-insights">
+            <div><strong>0.850</strong><span>ChiNext XGBoost R²</span></div>
+            <div><strong>+106%</strong><span>牛市情绪效应增幅（ChiNext）</span></div>
+            <div><strong>2</strong><span>新市场指标：MLI / PSAEWI</span></div>
+          </div>
+          <div class="tags">
+            <span>LLM / RoBERTa</span><span>Investor Sentiment</span><span>Quantile Regression</span>
+            <span>XGBoost</span><span>Behavioral Finance</span>
+          </div>
+          <div class="pub-actions">
+            <a class="paper-btn primary-paper" href="https://dl.acm.org/doi/10.1145/3767052.3767067" target="_blank" rel="noopener">ACM Digital Library ↗</a>
+            <a class="paper-btn" href="https://doi.org/10.1145/3767052.3767067" target="_blank" rel="noopener">DOI ↗</a>
+            <a class="paper-btn" href="assets/papers/BDAIE-2025-Sentiment-LLM.pdf" target="_blank" rel="noopener">Paper PDF</a>
+            <button class="paper-btn evidence-btn" type="button" data-modal="acceptance-modal">Acceptance Letter</button>
+            <button class="paper-btn details-toggle" type="button" aria-expanded="false">Key Findings ↓</button>
+          </div>
+          <div class="pub-details" hidden>
+            <div class="detail-grid">
+              <div>
+                <small>Method</small>
+                <p>Fine-tuned Chinese RoBERTa + 7-emotion regression + dynamic adaptive weighting; interaction regression, quantile regression, Granger/VAR, Random Forest and XGBoost.</p>
+              </div>
+              <div>
+                <small>Main finding</small>
+                <p>情绪的预测作用具有显著市场状态依赖性，在牛市中更强；MLI 与 PSAEWI 提供互补市场结构信息。</p>
+              </div>
+              <div>
+                <small>Publication</small>
+                <p>ACM International Conference Proceedings Series, BDAIE 2025, 7 pages, ISBN 979-8-4007-1601-0.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </article>
-      <article class="pub">
+      <article class="pub interactive-card" data-category="project">
         <div class="pub-num">04</div>
         <div>
           <div class="badges"><span class="sand">Research Project</span><span>Core Contributor</span></div>
@@ -266,6 +364,23 @@
   </div>
 </section>
 </main>
+
+
+<div class="modal" id="acceptance-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="acceptance-title">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-panel">
+    <div class="modal-head">
+      <div>
+        <small>ACADEMIC EVIDENCE</small>
+        <h3 id="acceptance-title">BDAIE 2025 Acceptance Letter</h3>
+      </div>
+      <button class="modal-close" type="button" data-close-modal aria-label="关闭">×</button>
+    </div>
+    <img src="assets/evidence/BDAIE-2025-Acceptance-Letter.jpg" alt="BDAIE 2025 acceptance letter for Junyi Fang">
+    <p class="modal-caption">Acceptance letter dated July 7, 2025. The published ACM proceedings paper is linked directly from the publication card.</p>
+  </div>
+</div>
+<button class="back-top" type="button" aria-label="返回顶部">↑</button>
 
 <footer><div class="container footer"><span>© <span id="year"></span> Junyi Fang</span><span>Academic profile · Shanghai / Changsha</span></div></footer>
 <script src="assets/script.js"></script>
