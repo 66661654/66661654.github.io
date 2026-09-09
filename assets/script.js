@@ -156,3 +156,34 @@ const countObs=new IntersectionObserver(entries=>{
   });
 },{threshold:.5});
 counters.forEach(c=>countObs.observe(c));
+
+
+// Generic honors certificate modal
+const certModal=document.getElementById('certificate-modal');
+const certImg=document.getElementById('certificate-image');
+const certTitle=document.getElementById('certificate-title');
+document.querySelectorAll('[data-cert-src]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(!certModal || !certImg) return;
+    certImg.src=btn.dataset.certSrc;
+    certImg.alt=btn.dataset.certTitle || 'Certificate evidence';
+    if(certTitle) certTitle.textContent=btn.dataset.certTitle || 'Certificate';
+    certModal.classList.add('open');
+    certModal.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  });
+});
+document.querySelectorAll('[data-close-cert-modal]').forEach(el=>el.addEventListener('click',()=>{
+  certModal?.classList.remove('open');
+  certModal?.setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+  if(certImg) certImg.src='';
+}));
+addEventListener('keydown',e=>{
+  if(e.key==='Escape' && certModal?.classList.contains('open')){
+    certModal.classList.remove('open');
+    certModal.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+    if(certImg) certImg.src='';
+  }
+});
