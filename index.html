@@ -17,6 +17,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/v5.css">
+  <link rel="stylesheet" href="assets/v6.css">
 
   <script type="application/ld+json">
   {
@@ -44,6 +45,13 @@
   </script>
 </head>
 <body class="site-loading">
+<div class="page-noise" aria-hidden="true"></div>
+<div class="page-mesh" aria-hidden="true">
+  <span class="mesh-orb mesh-orb-a"></span>
+  <span class="mesh-orb mesh-orb-b"></span>
+  <span class="mesh-orb mesh-orb-c"></span>
+</div>
+<div class="section-rail" aria-label="页面章节导航"></div>
 <div class="scroll-progress" aria-hidden="true"><span></span></div>
 <div class="cursor-glow" aria-hidden="true"></div>
 <div class="ambient ambient-a" aria-hidden="true"></div>
@@ -70,7 +78,7 @@
 </header>
 
 <main id="home">
-<section class="hero">
+<section class="hero motion-section">
   <div class="container hero-grid">
     <div>
       <p class="eyebrow">ACADEMIC & PROFESSIONAL PROFILE</p>
@@ -91,6 +99,10 @@
       <div class="tags">
         <span>Trustworthy LLM</span><span>Operations Research</span><span>Supply Chain</span>
         <span>Optimization Modeling</span><span>Decision Intelligence</span>
+      </div>
+      <div class="hero-focus-line">
+        <span>RESEARCH IDENTITY</span>
+        <strong>Quantitative foundation → Trustworthy AI → Operations & Supply Chain</strong>
       </div>
       <div class="hero-stats hero-stats-five" aria-label="Academic highlights">
         <div><strong data-count="1" data-prefix="#">#1</strong><span>本科专业排名</span></div>
@@ -114,7 +126,7 @@
   </div>
 </section>
 
-<section class="section reveal-section" id="about">
+<section class="section reveal-section motion-section" id="about">
   <div class="container">
     <div class="section-title"><span>01</span><h2>个人简介</h2><p>About</p></div>
     <div class="two-col">
@@ -144,7 +156,7 @@
   </div>
 </section>
 
-<section class="section alt reveal-section" id="education">
+<section class="section alt reveal-section motion-section" id="education">
   <div class="container">
     <div class="section-title"><span>02</span><h2>教育背景</h2><p>Education</p></div>
     <div class="timeline">
@@ -159,7 +171,7 @@
         <p>三位老师分别从数据科学、管理科学研究范式与运筹优化路径上，对我的本科阶段形成了持续影响。</p>
       </div>
       <div class="mentor-grid">
-        <article class="mentor-card">
+        <article class="mentor-card hover-light">
           <div class="mentor-top">
             <span class="mentor-index">01</span>
             <a href="https://bs.csu.edu.cn/info/1863/23733.htm" target="_blank" rel="noopener">CSU Profile ↗</a>
@@ -170,7 +182,7 @@
           <div class="mentor-note"><b>对我的影响</b><span>让我较早理解管理科学中“评价—数据—决策”的系统性研究框架。</span></div>
         </article>
 
-        <article class="mentor-card mentor-card-emphasis">
+        <article class="mentor-card hover-light mentor-card-emphasis">
           <div class="mentor-top">
             <span class="mentor-index">02</span>
             <a href="https://bs.csu.edu.cn/info/1863/23748.htm" target="_blank" rel="noopener">CSU Profile ↗</a>
@@ -181,7 +193,7 @@
           <div class="mentor-note"><b>对我的影响</b><span>是我本科阶段真正进入管理学学术研究与 UTD24 研究范式的重要引路人，也直接影响了我继续选择管理科学与工程。</span></div>
         </article>
 
-        <article class="mentor-card">
+        <article class="mentor-card hover-light">
           <div class="mentor-top">
             <span class="mentor-index">03</span>
             <a href="https://bs.csu.edu.cn/info/1893/24322.htm" target="_blank" rel="noopener">CSU Profile ↗</a>
@@ -196,19 +208,19 @@
   </div>
 </section>
 
-<section class="section" id="interests">
+<section class="section motion-section" id="interests">
   <div class="container">
     <div class="section-title"><span>03</span><h2>研究兴趣</h2><p>Research Interests</p></div>
     <div class="grid-2">
-      <article class="card featured-card"><i>A</i><h3>Trustworthy LLM for Optimization Modeling</h3><p>面向企业 SOP 与业务规则的自然语言 → 优化模型自动形式化；关注 provenance、constraint-level semantic alignment、counterexample verification 与 decision regret。</p></article>
-      <article class="card"><i>B</i><h3>AI for Operations & Supply Chain</h3><p>将大语言模型、机器学习与运筹优化用于仓储、库存、补货、履约、物流和企业运营决策。</p></article>
-      <article class="card"><i>C</i><h3>Sequential & Data-Driven Decision Making</h3><p>非平稳环境下的在线学习、Multi-Armed Bandit、强化学习与动态决策，以及不确定性驱动的决策优化。</p></article>
-      <article class="card"><i>D</i><h3>NLP, Knowledge Graph & Domain LLM</h3><p>知识蒸馏、实体关系抽取、知识图谱、领域大模型与企业/城市文本数据的结构化建模。</p></article>
+      <article class="card hover-light featured-card"><i>A</i><h3>Trustworthy LLM for Optimization Modeling</h3><p>面向企业 SOP 与业务规则的自然语言 → 优化模型自动形式化；关注 provenance、constraint-level semantic alignment、counterexample verification 与 decision regret。</p></article>
+      <article class="card hover-light"><i>B</i><h3>AI for Operations & Supply Chain</h3><p>将大语言模型、机器学习与运筹优化用于仓储、库存、补货、履约、物流和企业运营决策。</p></article>
+      <article class="card hover-light"><i>C</i><h3>Sequential & Data-Driven Decision Making</h3><p>非平稳环境下的在线学习、Multi-Armed Bandit、强化学习与动态决策，以及不确定性驱动的决策优化。</p></article>
+      <article class="card hover-light"><i>D</i><h3>NLP, Knowledge Graph & Domain LLM</h3><p>知识蒸馏、实体关系抽取、知识图谱、领域大模型与企业/城市文本数据的结构化建模。</p></article>
     </div>
   </div>
 </section>
 
-<section class="section agenda" id="agenda">
+<section class="section agenda motion-section" id="agenda">
   <div class="container">
     <div class="section-title dark"><span>03+</span><h2>当前研究议程</h2><p>Current Research Agenda</p></div>
     <div class="agenda-hero">
@@ -233,7 +245,7 @@
       <strong class="pipeline-explainer-title">Operational SOP ingestion</strong>
       <p class="pipeline-explainer-text">解析企业 SOP、表格和例外规则，保留版本、时间、适用范围与原始来源。</p>
     </div>
-    <div class="agenda-grid">
+    <div class="agenda-grid agenda-grid-v6">
       <article><h4>Contribution A</h4><h3>SOP-level Trustworthy Benchmark</h3><p>构建面向仓储与供应链 SOP 的 Text-to-Optimization benchmark，保留句子—规则—变量—约束—数据字段—决策结果的完整 provenance。</p></article>
       <article><h4>Contribution B</h4><h3>Counterexample-Grounded Verification</h3><p>通过 dual formalization、cross-audit 与 solver-generated minimal witness 检测 omission、direction、scope、hard/soft、binding 等 silent modeling failures。</p></article>
       <article><h4>Contribution C</h4><h3>Decision-Aware Diagnosis & Repair</h3><p>把 semantic error 进一步连接到 operational regret、hard-rule violation 与 economic/service loss，并据此进行 error-aware repair。</p></article>
@@ -245,7 +257,7 @@
   </div>
 </section>
 
-<section class="section alt" id="research">
+<section class="section alt motion-section" id="research">
   <div class="container">
     <div class="section-title"><span>04</span><h2>科研成果</h2><p>Research & Publications</p></div>
     <div class="pub-toolbar reveal">
@@ -258,7 +270,7 @@
       <span class="pub-hint">Hover / click cards for details</span>
     </div>
     <div class="pub-list">
-      <article class="pub interactive-card" data-category="working">
+      <article class="pub hover-light interactive-card" data-category="working">
         <div class="pub-num">01</div>
         <div>
           <div class="badges"><span class="blue">Manuscript · Under Review</span><span>First & Corresponding Author</span></div>
@@ -268,7 +280,7 @@
           <a href="assets/papers/RAVEN-UCB.pdf" target="_blank">Read manuscript →</a>
         </div>
       </article>
-      <article class="pub interactive-card" data-category="published">
+      <article class="pub hover-light interactive-card" data-category="published">
         <div class="pub-num">02</div>
         <div>
           <div class="badges"><span class="green">Accepted</span><span>Third Author</span></div>
@@ -278,7 +290,7 @@
           <a href="assets/papers/Consumer-Purchase-Prediction.pdf" target="_blank">Read paper →</a>
         </div>
       </article>
-      <article class="pub interactive-card publication-featured" data-category="published" id="bdaie-2025">
+      <article class="pub hover-light interactive-card publication-featured" data-category="published" id="bdaie-2025">
         <div class="pub-num">03</div>
         <div class="pub-main">
           <div class="badges">
@@ -328,7 +340,7 @@
           </div>
         </div>
       </article>
-      <article class="pub interactive-card award-publication" data-category="project">
+      <article class="pub hover-light interactive-card award-publication" data-category="project">
         <div class="pub-num">04</div>
         <div>
           <div class="badges">
@@ -352,32 +364,32 @@
   </div>
 </section>
 
-<section class="section" id="projects">
+<section class="section motion-section" id="projects">
   <div class="container">
     <div class="section-title"><span>05</span><h2>代表研究项目</h2><p>Selected Projects</p></div>
     <div class="grid-2">
-      <article class="project">
+      <article class="project hover-light">
         <small>Knowledge Graph · LLM · 2024–2025</small>
         <h3>城市叙事空间数据库：知识蒸馏 + 知识图谱</h3>
         <p>从多源社交媒体文本采集、主题建模、实体关系抽取到 Neo4j 图数据库构建，形成面向智慧城市、文旅策划与城市更新的语义数据库方法。</p>
         <ul><li>处理 20万+ 非结构化数据。</li><li>BERT 教师模型 → BiLSTM+Attention 轻量学生模型。</li><li>研发 Python 数据清洗与 Neo4j/Cypher 自动化流程。</li><li>相关技术方案形成发明专利申请材料。</li></ul>
         <a href="assets/papers/Urban-Narrative-KG-Patent-Draft.docx">Method / patent draft →</a>
       </article>
-      <article class="project">
+      <article class="project hover-light">
         <small>Bandit · OR · Logistics</small>
         <h3>RAVEN-UCB：非平稳环境下的方差自适应在线决策</h3>
         <p>面向奖励分布动态变化场景，研究探索—利用平衡、不确定性建模和物流决策模拟。</p>
         <ul><li>方差作为动态探索信号。</li><li>时间衰减探索参数与 O(1) 递归更新。</li><li>物流场景模拟：100 个仓库的动态选择问题。</li></ul>
         <a href="assets/papers/RAVEN-UCB.pdf" target="_blank">Manuscript →</a>
       </article>
-      <article class="project highlight">
+      <article class="project hover-light highlight">
         <small>CURRENT RESEARCH AGENDA · 2026–</small>
         <h3>SOP2VerifiedOpt · Trustworthy LLM for Operations Research Modeling</h3>
         <p>从企业 SOP、管理规则和数据表出发，自动形成带 provenance 的业务规则与优化模型；通过 dual formalization、constraint-level semantic audit、solver-generated counterexamples 与 decision regret 检测并修复 silent modeling failures。</p>
         <div class="flow"><span>SOP</span><b>→</b><span>Rule Provenance</span><b>→</b><span>Optimization Model</span><b>→</b><span>Counterexample Audit</span><b>→</b><span>Verified Decision</span></div>
         <a href="research-agenda.html">View research agenda →</a>
       </article>
-      <article class="project">
+      <article class="project hover-light">
         <small>Marketing Analytics · 2024–2025</small>
         <h3>消费者购买决策预测：神经网络分位数回归</h3>
         <p>以电商笔记本电脑销售数据为对象，将分位数回归的分布刻画能力与神经网络非线性拟合能力结合，研究价格、口碑与服务等因素对购买决策的影响。</p>
@@ -387,12 +399,12 @@
   </div>
 </section>
 
-<section class="section alt" id="practice">
+<section class="section alt motion-section" id="practice">
   <div class="container">
     <div class="section-title"><span>06</span><h2>产业 / 创业实践</h2><p>Industry & Entrepreneurship</p></div>
     <div class="grid-3">
-      <article class="practice"><small>2025 — 至今</small><h3>湖南楚湘智能科技有限公司</h3><b>联合创始人兼 CEO / 总经理</b><p>负责公司战略、AI 产品设计、学校与企业客户需求分析、商业模式验证、项目交付与团队管理。重点探索 AI 教育与传统产业数字化的软件化交付。</p></article>
-      <article class="practice practice-featured">
+      <article class="practice hover-light"><small>2025 — 至今</small><h3>湖南楚湘智能科技有限公司</h3><b>联合创始人兼 CEO / 总经理</b><p>负责公司战略、AI 产品设计、学校与企业客户需求分析、商业模式验证、项目交付与团队管理。重点探索 AI 教育与传统产业数字化的软件化交付。</p></article>
+      <article class="practice hover-light practice-featured">
         <small>2024.09 — 2025.04</small>
         <h3>天创智业集团</h3>
         <b>AI / 数字化研发项目助理 · 大模型研究员</b>
@@ -405,14 +417,14 @@
         </div>
         <div class="practice-footnote">集团公开资料显示，其旗下业务包含绿色建筑及集建团队等产业项目；本主页仅呈现本人参与的 AI / 数字化研发工作。</div>
       </article>
-      <article class="practice"><small>Leadership</small><h3>湖南省大学生创业社团联盟</h3><b>第一届秘书长 / 主要负责人</b><p>参与高校创业生态组织、政校企沟通与青年创业活动协调，持续关注高校技术成果与真实产业场景的连接。</p></article>
+      <article class="practice hover-light"><small>Leadership</small><h3>湖南省大学生创业社团联盟</h3><b>第一届秘书长 / 主要负责人</b><p>参与高校创业生态组织、政校企沟通与青年创业活动协调，持续关注高校技术成果与真实产业场景的连接。</p></article>
     </div>
   </div>
 </section>
 
 
 
-<section class="section honors-section honors-v5" id="honors">
+<section class="section honors-section honors-v5 motion-section" id="honors">
   <div class="container">
     <div class="section-title"><span>07</span><h2>荣誉与奖励</h2><p>Honors & Distinctions</p></div>
 
@@ -459,7 +471,7 @@
     </div>
 
     <div class="honor-feature-grid v5-grid">
-      <article class="honor-feature national honor-filter-item" data-honor-category="academic">
+      <article class="honor-feature hover-light national honor-filter-item" data-honor-category="academic">
         <div class="honor-label">NATIONAL · ACADEMIC</div>
         <h3>国家奖学金 × 3</h3>
         <p>2022–2023、2023–2024、2024–2025 学年度连续三年获本专科生国家奖学金。</p>
@@ -470,25 +482,24 @@
         </div>
       </article>
 
-      <article class="honor-feature provincial honor-filter-item" data-honor-category="academic leadership">
+      <article class="honor-feature hover-light provincial honor-filter-item" data-honor-category="academic leadership">
         <div class="honor-label">PROVINCIAL</div>
         <h3>湖南省普通高等学校 2026 届创新创业优秀毕业生</h3>
         <p>由湖南省教育厅授予，体现本科阶段在学业、科研与创新创业实践中的综合表现。</p>
         <div class="honor-actions"><button class="cert-btn" data-cert-src="assets/certificates/hunan-innovation-entrepreneurship-outstanding-graduate-2026.jpg" data-cert-title="湖南省普通高等学校 2026 届创新创业优秀毕业生">查看证书</button></div>
       </article>
 
-      <article class="honor-feature innovation-main honor-filter-item" data-honor-category="innovation">
+      <article class="honor-feature hover-light innovation-main honor-filter-item" data-honor-category="innovation">
         <div class="honor-label">INNOVATION & ENTREPRENEURSHIP</div>
         <h3>“智锁安充” · 国家级大学生创新创业项目负责人</h3>
         <p>项目获国家级立项并结题为“优秀项目”；后续在中南大学大学生创新年会交流展示。</p>
         <div class="honor-actions">
-          <a class="cert-btn strong-link" href="https://m.voc.com.cn/xhn/news/202601/31287934.html" target="_blank" rel="noopener">湖南日报报道 ↗</a>
           <button class="cert-btn" data-cert-src="assets/certificates/national-innovation-project-excellent-2025.jpg" data-cert-title="中南大学大学生创新创业项目国家级立项（优秀项目）">项目证书</button>
           <button class="cert-btn" data-cert-src="assets/certificates/csu-innovation-annual-conference-2025.jpg" data-cert-title="2025 年中南大学大学生创新年会交流证书">创新年会</button>
         </div>
       </article>
 
-      <article class="honor-feature challenge honor-filter-item" data-honor-category="innovation">
+      <article class="honor-feature hover-light challenge honor-filter-item" data-honor-category="innovation">
         <div class="honor-label">CHALLENGE CUP · PROVINCIAL GOLD</div>
         <h3>第十一届“挑战杯”湖南省大学生创业计划竞赛金奖</h3>
         <p>体现从问题识别、技术方案到产品化与路演表达的综合创新实践能力。</p>
@@ -498,14 +509,14 @@
         </div>
       </article>
 
-      <article class="honor-feature english honor-filter-item" data-honor-category="academic">
+      <article class="honor-feature hover-light english honor-filter-item" data-honor-category="academic">
         <div class="honor-label">LANGUAGE</div>
         <h3>2024 全国大学生英语竞赛（NECCS）C 类二等奖</h3>
         <p>作为非英语专业学生的全国性英语竞赛成绩，补充展示英文阅读与考试能力。</p>
         <div class="honor-actions"><button class="cert-btn" data-cert-src="assets/certificates/neccs-2024-second-prize.jpg" data-cert-title="2024 全国大学生英语竞赛（NECCS）C 类二等奖">查看证书</button></div>
       </article>
 
-      <article class="honor-feature university honor-filter-item" data-honor-category="academic leadership">
+      <article class="honor-feature hover-light university honor-filter-item" data-honor-category="academic leadership">
         <div class="honor-label">UNIVERSITY</div>
         <h3>中南大学 2026 届优秀毕业生</h3>
         <p>本科阶段综合发展荣誉；同时连续多学年获中南大学优秀学生与校级奖学金。</p>
@@ -529,7 +540,16 @@
 
 
 
-<section class="section contact" id="contact">
+<section class="academic-signal-band motion-section">
+  <div class="container signal-grid">
+    <div><small>QUANT</small><strong>数学竞赛双一等奖</strong><span>全国大学生数学竞赛 + 湖南省大学生数学竞赛</span></div>
+    <div><small>ACADEMIC</small><strong>国家奖学金 × 3</strong><span>连续三学年</span></div>
+    <div><small>RESEARCH</small><strong>AI × OR × Supply Chain</strong><span>从模型到可信决策</span></div>
+    <div><small>PRACTICE</small><strong>创业 / 产业数字化</strong><span>真实业务场景验证</span></div>
+  </div>
+</section>
+
+<section class="section contact motion-section" id="contact">
   <div class="container">
     <div class="section-title"><span>08</span><h2>联系方式</h2><p>Contact</p></div>
     <div class="contact-box">
@@ -580,5 +600,6 @@
 <footer><div class="container footer"><span>© <span id="year"></span> Junyi Fang</span><span>Academic profile · Shanghai / Changsha</span></div></footer>
 <script src="assets/script.js"></script>
 <script src="assets/v5.js"></script>
+<script src="assets/v6.js"></script>
 </body>
 </html>
