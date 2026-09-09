@@ -16,6 +16,7 @@
   <title>方珺逸 Junyi Fang | Academic Profile</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/v5.css">
 
   <script type="application/ld+json">
   {
@@ -95,7 +96,7 @@
         <div><strong data-count="1" data-prefix="#">#1</strong><span>本科专业排名</span></div>
         <div><strong data-count="3" data-suffix="×">3×</strong><span>连续三年国家奖学金</span></div>
         <div class="stat-honor"><strong>省优</strong><span>创新创业类优秀毕业生</span></div>
-        <div><strong>ACM</strong><span>Published Proceedings</span></div>
+        <div class="stat-math"><strong>2× A</strong><span>数学竞赛一等奖</span></div>
         <div><strong data-count="2026">2026</strong><span>SJTU Antai</span></div>
       </div>
     </div>
@@ -410,131 +411,122 @@
 </section>
 
 
-<section class="section honors-section" id="honors">
+
+<section class="section honors-section honors-v5" id="honors">
   <div class="container">
     <div class="section-title"><span>07</span><h2>荣誉与奖励</h2><p>Honors & Distinctions</p></div>
 
-    <div class="honors-intro">
+    <div class="honors-v5-head">
       <div>
         <p class="honors-kicker">SELECTED DISTINCTIONS</p>
-        <h3>本科阶段：连续三年国家奖学金 + 省级创新创业优秀毕业生</h3>
-        <p>核心荣誉优先展示学业表现、科研能力与创新创业实践；其余校级荣誉作为补充证据保留在下方。</p>
+        <h3>用数学能力、持续学业表现与创新实践，构成本科阶段的三条主线</h3>
+        <p>导师版主页只突出能够解释研究潜力的代表性荣誉；其中数学竞赛作为量化能力的重要证据单独强化。</p>
       </div>
-      <div class="honors-verified">
-        <span>Verified evidence</span>
-        <strong>证书 + 官方公示 / 媒体报道</strong>
+      <div class="honor-scoreboard">
+        <div><strong>3×</strong><span>国家奖学金</span></div>
+        <div><strong>2×</strong><span>数学竞赛一等奖</span></div>
+        <div><strong>1×</strong><span>省级创新创业优秀毕业生</span></div>
       </div>
     </div>
 
-    <div class="honor-feature-grid">
-      <article class="honor-feature national">
-        <div class="honor-label">NATIONAL</div>
+    <div class="honor-filterbar" role="group" aria-label="荣誉筛选">
+      <button class="honor-filter active" data-honor-filter="all">All</button>
+      <button class="honor-filter" data-honor-filter="math">Mathematics</button>
+      <button class="honor-filter" data-honor-filter="academic">Academic</button>
+      <button class="honor-filter" data-honor-filter="innovation">Innovation</button>
+      <button class="honor-filter" data-honor-filter="leadership">Leadership</button>
+    </div>
+
+    <div class="math-spotlight honor-filter-item" data-honor-category="math">
+      <div class="math-visual" aria-hidden="true">
+        <div class="math-ring ring-1"></div><div class="math-ring ring-2"></div>
+        <div class="math-axis axis-x"></div><div class="math-axis axis-y"></div>
+        <div class="math-symbol">∑</div>
+      </div>
+      <div class="math-copy">
+        <span class="spotlight-label">QUANTITATIVE DISTINCTION · 2023</span>
+        <h3>数学竞赛双一等奖</h3>
+        <p class="math-lead">第十五届全国大学生数学竞赛（初赛·非数学 B 类）一等奖 + 2023 年湖南省大学生数学竞赛（非数学 B 类）一等奖。</p>
+        <p>湖南省官方公示显示，2023 年湖南省大学生数学竞赛共有 45 所高校、5336 名学生参赛；非数学 B 类共 401 人，其中一等奖 45 人。我的名字列于该组一等奖名单。</p>
+        <div class="math-badges"><span>Calculus</span><span>Problem Solving</span><span>Quantitative Reasoning</span><span>Non-math B</span></div>
+        <div class="honor-actions">
+          <a class="cert-btn strong-link" href="https://www.hnssxxh.org.cn/?p=564" target="_blank" rel="noopener">湖南省官方名单 ↗</a>
+          <a class="cert-btn" href="https://www.hnssxxh.org.cn/?p=516" target="_blank" rel="noopener">赛事通知 ↗</a>
+          <button class="cert-btn" data-cert-src="assets/certificates/cmc15-first-prize-nonmath-b.jpg" data-cert-title="第十五届全国大学生数学竞赛（非数学 B 类）一等奖">全国赛证书</button>
+          <button class="cert-btn" data-cert-src="assets/certificates/hunan-math-competition-first-prize-2023.jpg" data-cert-title="2023 年湖南省大学生数学竞赛（非数学 B 类）一等奖">湖南省证书</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="honor-feature-grid v5-grid">
+      <article class="honor-feature national honor-filter-item" data-honor-category="academic">
+        <div class="honor-label">NATIONAL · ACADEMIC</div>
         <h3>国家奖学金 × 3</h3>
         <p>2022–2023、2023–2024、2024–2025 学年度连续三年获本专科生国家奖学金。</p>
-        <div class="honor-years"><span>2022–23</span><span>2023–24</span><span>2024–25</span></div>
         <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/national-scholarship-2022-2023.jpg" data-cert-title="2022–2023 学年度本专科生国家奖学金">2022–23 证书</button>
-          <a class="cert-btn" href="assets/certificates/national-scholarship-2023-2024.pdf" target="_blank" rel="noopener">2023–24 证书</a>
-          <button class="cert-btn" data-cert-src="assets/certificates/national-scholarship-2024-2025.jpg" data-cert-title="2024–2025 学年度本专科生国家奖学金">2024–25 证书</button>
+          <button class="cert-btn" data-cert-src="assets/certificates/national-scholarship-2022-2023.jpg" data-cert-title="2022–2023 学年度国家奖学金">2022–23</button>
+          <a class="cert-btn" href="assets/certificates/national-scholarship-2023-2024.pdf" target="_blank" rel="noopener">2023–24</a>
+          <button class="cert-btn" data-cert-src="assets/certificates/national-scholarship-2024-2025.jpg" data-cert-title="2024–2025 学年度国家奖学金">2024–25</button>
         </div>
       </article>
 
-      <article class="honor-feature provincial">
+      <article class="honor-feature provincial honor-filter-item" data-honor-category="academic leadership">
         <div class="honor-label">PROVINCIAL</div>
         <h3>湖南省普通高等学校 2026 届创新创业优秀毕业生</h3>
-        <p>湖南省教育厅授予；本科毕业阶段最具代表性的创新创业类综合荣誉之一。</p>
+        <p>由湖南省教育厅授予，体现本科阶段在学业、科研与创新创业实践中的综合表现。</p>
+        <div class="honor-actions"><button class="cert-btn" data-cert-src="assets/certificates/hunan-innovation-entrepreneurship-outstanding-graduate-2026.jpg" data-cert-title="湖南省普通高等学校 2026 届创新创业优秀毕业生">查看证书</button></div>
+      </article>
+
+      <article class="honor-feature innovation-main honor-filter-item" data-honor-category="innovation">
+        <div class="honor-label">INNOVATION & ENTREPRENEURSHIP</div>
+        <h3>“智锁安充” · 国家级大学生创新创业项目负责人</h3>
+        <p>项目获国家级立项并结题为“优秀项目”；后续在中南大学大学生创新年会交流展示。</p>
         <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/hunan-innovation-entrepreneurship-outstanding-graduate-2026.jpg" data-cert-title="湖南省普通高等学校 2026 届创新创业优秀毕业生">查看证书</button>
-          <a class="cert-btn" href="https://xgw.csu.edu.cn/info/1007/16234.htm" target="_blank" rel="noopener">中南大学公示 ↗</a>
+          <a class="cert-btn strong-link" href="https://m.voc.com.cn/xhn/news/202601/31287934.html" target="_blank" rel="noopener">湖南日报报道 ↗</a>
+          <button class="cert-btn" data-cert-src="assets/certificates/national-innovation-project-excellent-2025.jpg" data-cert-title="中南大学大学生创新创业项目国家级立项（优秀项目）">项目证书</button>
+          <button class="cert-btn" data-cert-src="assets/certificates/csu-innovation-annual-conference-2025.jpg" data-cert-title="2025 年中南大学大学生创新年会交流证书">创新年会</button>
         </div>
       </article>
 
-      <article class="honor-feature university">
+      <article class="honor-feature challenge honor-filter-item" data-honor-category="innovation">
+        <div class="honor-label">CHALLENGE CUP · PROVINCIAL GOLD</div>
+        <h3>第十一届“挑战杯”湖南省大学生创业计划竞赛金奖</h3>
+        <p>体现从问题识别、技术方案到产品化与路演表达的综合创新实践能力。</p>
+        <div class="honor-actions">
+          <a class="cert-btn" href="assets/certificates/challenge-cup-hunan-gold-2024.pdf" target="_blank" rel="noopener">查看证书</a>
+          <a class="cert-btn" href="https://m.voc.com.cn/xhn/news/202601/31287934.html" target="_blank" rel="noopener">媒体核验 ↗</a>
+        </div>
+      </article>
+
+      <article class="honor-feature english honor-filter-item" data-honor-category="academic">
+        <div class="honor-label">LANGUAGE</div>
+        <h3>2024 全国大学生英语竞赛（NECCS）C 类二等奖</h3>
+        <p>作为非英语专业学生的全国性英语竞赛成绩，补充展示英文阅读与考试能力。</p>
+        <div class="honor-actions"><button class="cert-btn" data-cert-src="assets/certificates/neccs-2024-second-prize.jpg" data-cert-title="2024 全国大学生英语竞赛（NECCS）C 类二等奖">查看证书</button></div>
+      </article>
+
+      <article class="honor-feature university honor-filter-item" data-honor-category="academic leadership">
         <div class="honor-label">UNIVERSITY</div>
         <h3>中南大学 2026 届优秀毕业生</h3>
-        <p>由中南大学授予，体现本科阶段综合学业、科研、实践与发展表现。</p>
-        <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/csu-outstanding-graduate-2026.jpg" data-cert-title="中南大学 2026 届优秀毕业生">查看证书</button>
-          <a class="cert-btn" href="https://xgw.csu.edu.cn/info/1007/16234.htm" target="_blank" rel="noopener">学校公示 ↗</a>
-        </div>
-      </article>
-
-      <article class="honor-feature academic">
-        <div class="honor-label">ACADEMIC</div>
-        <h3>中南大学优秀学生 × 3（含 2024–2025 学年官方公示）</h3>
-        <p>已留存 2022–2023、2023–2024 学年证书；2024–2025 学年商学院官方评优公示中继续入选“优秀学生”。</p>
-        <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/csu-outstanding-student-2022-2023.jpg" data-cert-title="中南大学 2022–2023 学年优秀学生">2022–23 证书</button>
-          <button class="cert-btn" data-cert-src="assets/certificates/csu-outstanding-student-2023-2024.jpg" data-cert-title="中南大学 2023–2024 学年优秀学生">2023–24 证书</button>
-          <a class="cert-btn" href="https://bs.csu.edu.cn/bks/info/1069/3509.htm" target="_blank" rel="noopener">2024–25 公示 ↗</a>
-        </div>
+        <p>本科阶段综合发展荣誉；同时连续多学年获中南大学优秀学生与校级奖学金。</p>
+        <div class="honor-actions"><button class="cert-btn" data-cert-src="assets/certificates/csu-outstanding-graduate-2026.jpg" data-cert-title="中南大学 2026 届优秀毕业生">查看证书</button></div>
       </article>
     </div>
 
-    <div class="honor-evidence-title">
-      <span>ADDITIONAL CAMPUS HONORS</span>
-      <h3>其他代表性荣誉</h3>
+    <div class="honor-timeline-wrap">
+      <div class="honor-evidence-title"><span>SELECTED TIMELINE</span><h3>本科阶段荣誉轨迹</h3></div>
+      <div class="honor-timeline">
+        <div class="honor-year"><b>2023</b><span>国家奖学金 · 湖南省大学生数学竞赛一等奖 · 第十五届全国大学生数学竞赛一等奖</span></div>
+        <div class="honor-year"><b>2024</b><span>国家奖学金 · “挑战杯”湖南省金奖 · NECCS C 类二等奖</span></div>
+        <div class="honor-year"><b>2025</b><span>国家奖学金 · 国家级大创优秀项目 · 中南大学创新年会交流</span></div>
+        <div class="honor-year"><b>2026</b><span>湖南省创新创业优秀毕业生 · 中南大学优秀毕业生</span></div>
+      </div>
     </div>
 
-    <div class="honor-evidence-grid">
-      <article>
-        <div class="evidence-icon">A+</div>
-        <h4>中南大学学年一等奖学金</h4>
-        <p>2022–2023、2023–2024 连续两学年。</p>
-        <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/csu-scholarship-first-2022-2023.jpg" data-cert-title="中南大学 2022–2023 学年一等奖学金">2022–23</button>
-          <button class="cert-btn" data-cert-src="assets/certificates/csu-scholarship-first-2023-2024.jpg" data-cert-title="中南大学 2023–2024 学年一等奖学金">2023–24</button>
-        </div>
-      </article>
-
-      <article>
-        <div class="evidence-icon">A</div>
-        <h4>中南大学学年二等奖学金</h4>
-        <p>2024–2025 学年度。</p>
-        <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/csu-scholarship-second-2024-2025.jpg" data-cert-title="中南大学 2024–2025 学年二等奖学金">查看证书</button>
-        </div>
-      </article>
-
-      <article>
-        <div class="evidence-icon">CYL</div>
-        <h4>中南大学优秀共青团员</h4>
-        <p>2024–2025 学年度五四评优。</p>
-        <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/csu-outstanding-league-member-2024-2025.jpg" data-cert-title="中南大学 2024–2025 学年度优秀共青团员">查看证书</button>
-          <a class="cert-btn" href="https://bs.csu.edu.cn/info/1045/24620.htm" target="_blank" rel="noopener">学院公示 ↗</a>
-        </div>
-      </article>
-
-      <article>
-        <div class="evidence-icon">48</div>
-        <h4>党校第 48 期入党积极分子培训班 · 优秀学员标兵</h4>
-        <p>中共中南大学委员会党校授予。</p>
-        <div class="honor-actions">
-          <button class="cert-btn" data-cert-src="assets/certificates/party-school-outstanding-trainee-2023.jpg" data-cert-title="中南大学党校第 48 期入党积极分子培训班优秀学员标兵">查看证书</button>
-        </div>
-      </article>
-
-      <article>
-        <div class="evidence-icon">M</div>
-        <h4>中南大学统计建模大赛一等奖</h4>
-        <p>汽车召回主题演变与预警机制研究项目。</p>
-        <a class="cert-btn" href="#research">查看科研项目 ↑</a>
-      </article>
-
-      <article>
-        <div class="evidence-icon">🏆</div>
-        <h4>国家级 / 省级竞赛代表奖项</h4>
-        <p>全国高校商业精英挑战赛全国一等奖 × 2；“挑战杯”湖南省金奖；全国大学生数学竞赛一等奖（非数学类）。</p>
-      </article>
-    </div>
-
-    <div class="honors-note">
-      <strong>展示原则：</strong>
-      导师版主页仅突出与学术潜力、研究能力和创新实践相关的代表荣誉；完整证书材料保留作核验，不以“证书墙”替代研究成果。
-    </div>
+    <div class="honors-note"><strong>展示逻辑：</strong> 数学竞赛用于证明量化基础，国家奖学金用于证明持续学业表现，创新创业项目用于证明把技术带入真实场景的能力。</div>
   </div>
 </section>
+
 
 
 <section class="section contact" id="contact">
@@ -587,5 +579,6 @@
 
 <footer><div class="container footer"><span>© <span id="year"></span> Junyi Fang</span><span>Academic profile · Shanghai / Changsha</span></div></footer>
 <script src="assets/script.js"></script>
+<script src="assets/v5.js"></script>
 </body>
 </html>
